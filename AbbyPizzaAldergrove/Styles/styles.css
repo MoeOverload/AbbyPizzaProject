@@ -6,7 +6,7 @@
       text-align: center;
       
     }
-  }
+}
   
 
 
@@ -63,6 +63,18 @@ html body{
     width: 100%;
     border-top: 4px solid forestgreen;
     border-bottom: 4px solid red;
+}
+.nabar-dropdown{
+    text-align: center;
+}
+.dropdown-menu{
+    display: flex;
+    
+}
+.menuTitle{
+    text-align: center;
+    font-family:'Cinzel', serif;
+    font-size: xx-large; 
 }
 .row {
     margin-left: 0;
@@ -272,6 +284,6 @@ footer{
     display:flexbox;
     text-align:center;
     
-    padding:1%%;
+    padding:1%;
     font-family: 'Italianno',serif;
 }

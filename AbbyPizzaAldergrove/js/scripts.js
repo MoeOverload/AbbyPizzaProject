@@ -35,4 +35,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     //Click event listener to open a call option 
     orderNowButton.addEventListener('click')
+
+
+    
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+          e.preventDefault();
+          const category = this.dataset.category;
+      
+          document.querySelectorAll('.SpecialMenuItems').forEach(menuItem => {
+            const itemCategory = menuItem.dataset.category;
+            if (category === 'all' || itemCategory === category) {
+              menuItem.style.display = 'block';
+            } else {
+              menuItem.style.display = 'none';
+            }
+          });
+        });
+    });
+      
+
+
+
+
 });

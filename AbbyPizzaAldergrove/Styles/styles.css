@@ -67,10 +67,6 @@ html body{
 .nabar-dropdown{
     text-align: center;
 }
-.dropdown-menu{
-    display: flex;
-    
-}
 .menuTitle{
     text-align: center;
     font-family:'Cinzel', serif;
@@ -135,6 +131,39 @@ html body{
     color: #c0392b; /* deep tomato red */
     font-size: 1.5rem;
 }
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.25rem 0;
+}
+
+.priceText {
+    font-size: medium;
+    padding: 0.2rem 0.5rem;
+}
+.menuLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+    font-size: 1rem;
+}
+.pastaMenuItem{
+    font-family:'Cinzel', serif;
+    padding: 2%;
+    font-size: xx-large;
+    overflow-wrap: normal;
+    text-align: center;
+    margin-top: 2%;
+    
+}
+
+.priceText {
+    font-weight: bold;
+    text-align: right;
+}
+
 .fancyLine{
     width: 100%;
     max-width: 100%;

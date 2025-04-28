@@ -58,8 +58,11 @@
                         Fresh, Local, Fast Delivery
                     </span>
   
-                    <!-- Spacer to balance flex (same width as burger) -->
-                    <div style="width: 40px;"></div>
+                     <!-- pizza by the slice -->
+                    <div class="d-flex flex-column align-items-end" style="min-width: 40px;">
+                        <small class="text-end fw-bold" style="font-size: 0.75rem; line-height: 1;">🍕 By the Slice<br>$1.50 Each</small>
+
+                    </div>
   
                     <!-- Collapsible Nav Menu -->
                     <div class="collapse navbar-collapse " id="navbarMenu">
@@ -67,7 +70,7 @@
                             <li class="nav-item"><a class="nav-link" href="/AbbyPizzaAldergrove/AbbyPizzaAldergrove/">Home</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Menu's</a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu"style="text-align: center;">
                                   <li class="nav-item"><a class="dropdown-item" href="/AbbyPizzaAldergrove/AbbyPizzaAldergrove/Menu/Specials/">Specials</a></li>
                                   <li class="nav-item"><a class="dropdown-item" href="/AbbyPizzaAldergrove/AbbyPizzaAldergrove/Menu/Pizza/">Pizza Menu</a></li>
                                   <li class="nav-item"><a class="dropdown-item" href="/AbbyPizzaAldergrove//AbbyPizzaAldergrove/Menu/Pasta/">Pasta Menu</a></li>
@@ -86,10 +89,25 @@
             <h2 class="pageTitle">BBQ / Salads</h2>
             
         <section class="container" >
-                    
+            <div class="container my-4">
+                <div class="row">
+              
+                  <!-- Left Side: Beverages -->
+                  <div class="col-12 col-md-6 mb-3">
+                    <button class="btn btn-danger w-100" type="button" data-bs-toggle="collapse" data-bs-target="#beveragesCollapse" aria-expanded="false" aria-controls="beveragesCollapse">
+                      View Beverage Options
+                    </button>
+                    <div class="collapse mt-2" id="beveragesCollapse">
+                      <div class="card card-body">
+                        <p>Can of Soda: $1.50</p>
+                        <p>2L Bottle: $3.99</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>     
             <div class="row" style="justify-content: space-between;">
                 
-                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" data-category="pasta">
+                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" >
                     <div class="greenBorder">
                         <div class="redBorder">
                             <h3>Wings</h3>
@@ -122,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" data-category="pasta">
+                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" >
                     <div class="greenBorder">
                         <div class="redBorder">
                             <h3>BBQ Ribs</h3>
@@ -134,7 +152,10 @@
                             </svg>
                 
                             <!-- Item line -->
-                            
+                            <div class="menuLine">
+                                <p>Served With Pasta, Garlic Toast
+                                Or Green Salad</p>
+                            </div>
                             <div class="menuLine">
                                 <span><strong>4</strong> Baby Back Ribs</span>
                                 <span class="priceText">$39.95</span>
@@ -143,9 +164,11 @@
                             <div class="menuLine">
                                 <span><strong>2</strong> Baby Back Ribs</span>
                                 
-                                <span class="priceText">$18.95</span>
+                                <span class="priceText">$39.95</span>
                             </div>
-                            
+                            <div class="menuLine">
+                                <span> W/ <strong>12</strong> Chicken wings</span>
+                            </div>
                 
                             <svg class="fancyLine" viewBox="0 0 200 10" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black">
                                 <line x1="0" y1="5" x2="90" y2="5" stroke-width="1" />
@@ -155,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" data-category="pasta">
+                <div class="pastaMenuItem col-12 col-sm-6 col-md-6 col-lg-4" >
                     <div class="greenBorder">
                         <div class="redBorder">
                             <h3>Salads</h3>

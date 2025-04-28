@@ -1,112 +1,130 @@
+/* ============================= */
+/* CONTACT US SECTION (desktop only) */
+/* ============================= */
 @media screen and (min-width: 992px) {
-    .contactUs , .contactUs h4 {
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      
+    .contactUs, .contactUs h4 {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 }
-  
 
-
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
 .hero {
     height: 40vh;
     width: 100%;
     position: relative;
     color: #fcf1dd;
-    overflow: hidden;
+    overflow: hidden; /* stops stuff from spilling outside */
 }
-  
+
 .hero-title {
     font-family: 'Italianno', serif;
     color: black;
     font-size: 4rem;
     font-weight: 700;
-    text-shadow: 0 8px 0px rgba(0, 0, 0, 0.1); /* moody shadow */
-    opacity: 0;
-    transform: translateY(-200px);
-    animation: dropIn 1.2s ease-out forwards;
+    text-shadow: 0 8px 0px rgba(0, 0, 0, 0.1); /* light shadow */
+    opacity: 0; /* hidden at start */
+    transform: translateY(-200px); /* moved way up */
+    animation: dropIn 1.2s ease-out forwards; /* plays drop-in animation */
 }
-  
-/* Animation keyframes */
+
+/* Drop-In Animation */
 @keyframes dropIn {
     0% {
-      transform: translateY(-200px);
-      opacity: 0;
+        transform: translateY(-200px);
+        opacity: 0;
     }
     80% {
-      transform: translateY(60px); /* a little overshoot bounce */
-      opacity: 1;
+        transform: translateY(60px); /* bounce down */
+        opacity: 1;
     }
     100% {
-      transform: translateY(60px);
-      opacity: 1;
+        transform: translateY(60px);
+        opacity: 1;
     }
 }
-  
-html body{
+
+/* ============================= */
+/* GENERAL PAGE STYLES */
+/* ============================= */
+html body {
     width: 100%;
     background: #fcf1dd;
     margin: 0;
     padding: 0;
-    
 }
-.pageTitle{
+
+.pageTitle {
     text-align: center;
-    font-family:'Italianno',serif ;
-    font-size:4rem;
-    text-decoration:underline;
+    font-family: 'Italianno', serif;
+    font-size: 4rem;
+    text-decoration: underline;
     margin-bottom: 8%;
 }
-.navbar{
+
+/* ============================= */
+/* NAVBAR STYLES */
+/* ============================= */
+.navbar {
     width: 100%;
     border-top: 4px solid forestgreen;
     border-bottom: 4px solid red;
 }
-.nabar-dropdown{
+
+.navbar-dropdown { 
     text-align: center;
 }
-.menuTitle{
+
+.menuTitle {
     text-align: center;
-    font-family:'Cinzel', serif;
-    font-size: xx-large; 
+    font-family: 'Cinzel', serif;
+    font-size: xx-large;
 }
+
 .row {
     margin-left: 0;
     margin-right: 0;
 }
-  
+
+/* ============================= */
+/* COLLAPSE ANIMATION */
+/* ============================= */
 .transition-collapse {
     transition: height 0.3s ease;
     overflow: hidden;
 }
-  
 
-.SpecialMenuItems{
+/* ============================= */
+/* SPECIAL MENU ITEMS */
+/* ============================= */
+.SpecialMenuItems {
     text-align: center;
     padding: 1rem;
     margin: 1.5rem auto;
     border-radius: 10px;
     justify-content: center;
-    
-    
 }
-.SpecialMenuItems h3{
-    font-family:'Cinzel', serif;
+
+.SpecialMenuItems h3 {
+    font-family: 'Cinzel', serif;
     padding: 2%;
     font-size: xx-large;
     overflow-wrap: normal;
-    
-
 }
-.SpecialMenuItems p{
+
+.SpecialMenuItems p {
     font-size: larger;
 }
-.SpecialMenuItems strong{
+
+.SpecialMenuItems strong {
     font-size: large;
 }
-.SpecialMenuItems .extrasPhotoContainer{
+
+.SpecialMenuItems .extrasPhotoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,22 +133,29 @@ html body{
     height: auto;
     margin: 0 auto;
     padding: 1%;
-    
 }
-.SpecialMenuItems .extrasCenterImage{
+
+.SpecialMenuItems .extrasCenterImage {
     border-radius: 4%;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* or "contain" if you don’t want it cropped */
-
+    object-fit: cover;
 }
-.priceText{
-    
-    font-family:'Playfair Display', serif;
+
+/* ============================= */
+/* PRICE TEXT */
+/* ============================= */
+.priceText {
     font-weight: bold;
-    color: #c0392b; /* deep tomato red */
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    color: #c0392b;
     font-size: 1.5rem;
 }
+
+/* ============================= */
+/* FLEX UTILITIES */
+/* ============================= */
 .d-flex {
     display: flex;
     flex-wrap: wrap;
@@ -138,10 +163,6 @@ html body{
     margin: 0.25rem 0;
 }
 
-.priceText {
-    font-size: medium;
-    padding: 0.2rem 0.5rem;
-}
 .menuLine {
     display: flex;
     justify-content: space-between;
@@ -149,22 +170,23 @@ html body{
     padding: 0.25rem 0;
     font-size: 1rem;
 }
-.pastaMenuItem{
-    font-family:'Cinzel', serif;
+
+/* ============================= */
+/* PASTA MENU */
+/* ============================= */
+.pastaMenuItem {
+    font-family: 'Cinzel', serif;
     padding: 2%;
     font-size: xx-large;
     overflow-wrap: normal;
     text-align: center;
     margin-top: 2%;
-    
 }
 
-.priceText {
-    font-weight: bold;
-    text-align: right;
-}
-
-.fancyLine{
+/* ============================= */
+/* FANCY LINE SVG DECORATION */
+/* ============================= */
+.fancyLine {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -172,32 +194,59 @@ html body{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
 .fancyLine svg {
     max-width: 100%;
     height: auto;
     display: block;
-  }
-  
-.greenBorder{
+}
+
+/* ============================= */
+/* BORDER CARD STYLES */
+/* ============================= */
+.greenBorder {
     border: 5px solid green;
     padding: 10px;
     background-color: white;
     margin: 1rem;
     height: 100%;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     border-radius: 3rem;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
 }
-.redBorder{
+
+.redBorder {
     border: 3px solid red;
     padding: 1rem;
     background-color: white;
     height: 100%;
     box-sizing: border-box;
     border-radius: 3rem;
-    
 }
-.miniContact{
+
+/* ============================= */
+/* CREATE YOUR OWN (CYO) MENU */
+/* ============================= */
+.createYourOwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CYO-Options {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.CYO-Options p {
+    font-weight: 600;
+}
+
+/* ============================= */
+/* MINI CONTACT SECTION */
+/* ============================= */
+.miniContact {
     background-color: white;
     width: 100%;
     max-width: 100%;
@@ -206,29 +255,35 @@ html body{
     text-align: center;
     padding: 3%;
     margin-top: 10%;
-       
-
 }
-footer{
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
     background: #fcf1dd;
     max-width: 100%;
     width: 100%;
     height: auto;
     padding: 1rem;
-    
 }
-.footerLinks{
-    
-    
+
+.footerLinks {
     color: rgb(23, 19, 32);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.footerLink p{
+
+.footerLink p {
     font-size: medium;
 }
+
+/* ============================= */
+/* BACK TO TOP & ORDER NOW BUTTONS */
+/* ============================= */
 #backToTop {
+    display:none;
     position: fixed;
     bottom: 100px;
     right: 20px;
@@ -247,7 +302,9 @@ footer{
 #backToTop:hover {
     background-color: #ffffff;
 }
-#orderNow{
+
+#orderNow {
+    display: none;
     position: fixed;
     bottom: 100px;
     left: 20px;
@@ -262,10 +319,49 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s;
 }
-#orderNow a{
+
+#orderNow a {
     text-decoration: none;
     color: black;
 }
+
+/* ============================= */
+/* STICKY BOTTOM SIZE PRICES BAR */
+/* ============================= */
+.sizePricesStickyBottom {
+    position: sticky;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 2px solid forestgreen;
+    border-bottom: 2px solid #e63946;
+    z-index: 1000;
+}
+
+/* ============================= */
+/* COLLAPSE SECTION */
+/* ============================= */
+.collapse:not(.show) {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.collapse.show {
+    height: auto;
+    transition: height 0.3s ease;
+}
+
+/* ============================= */
+/* PHOTO CONTAINERS */
+/* ============================= */
 .photoContainer {
     display: flex;
     justify-content: center;
@@ -277,7 +373,6 @@ footer{
     height: auto;
     margin: 0 auto;
     padding: 3%;
-    
 }
 
 .centerImage {
@@ -285,34 +380,39 @@ footer{
     border-radius: 10%;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* or "contain" if you don’t want it cropped */
+    object-fit: cover;
 }
-.contactUs{
-    padding:1rem;
+
+/* ============================= */
+/* CONTACT US PAGE */
+/* ============================= */
+.contactUs {
+    padding: 1rem;
     margin: 0.2rem;
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
-    
-
+    align-items: flex-start;
 }
-.mapContainer{
+
+.mapContainer {
     display: flex;
     width: 80%;
     height: auto;
     margin: 1rem;
-    background-color:white;
-    border:4px solid forestgreen;
+    background-color: white;
+    border: 4px solid forestgreen;
     border-radius: 10px;
-    padding:2%;
+    padding: 2%;
 }
-.thanksContainerInner{
+
+/* ============================= */
+/* THANK YOU PAGE */
+/* ============================= */
+.thanksContainerInner {
     color: white;
-    border-top:2px solid forestgreen;
-    border-bottom: 2px solid red;
-    display:flexbox;
-    text-align:center;
-    
-    padding:1%;
-    font-family: 'Italianno',serif;
+    border-bottom: 2px solid black;
+    display: flexbox;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Italianno', serif;
 }
